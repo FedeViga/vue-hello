@@ -1,5 +1,6 @@
 .my_card {
     position: relative;
+    animation: appear 1s ease;
 }
 
 h1 {
@@ -9,4 +10,22 @@ h1 {
     transform: translateX(-50%);
 
     color: white;
+}
+
+@keyframes appear {
+    
+    0% {
+        opacity: 0;
+        transform: scale(.5, .5);
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
 }
