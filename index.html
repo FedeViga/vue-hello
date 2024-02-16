@@ -16,13 +16,15 @@
     <!-- importazione della libreria Vue -->
     <script src="https://unpkg.com/vue@3"></script>
 
-    <div id="app" class="container p-5">
+    <div id="app" class="container mt-5 p-2">
         
-        <div class="card bg-dark text-white text-center p-4 shadow-lg">
+        <div class="card col-12 col-md-9 col-lg-6 mx-auto rounded-5 bg-dark text-white text-center p-4 shadow-lg">
 
-            <h1>
+            <h1 class="mb-4">
                 {{ hello }}
             </h1>
+
+            <img class="img-fluid mx-auto rounded-5" :src="image" alt="hello world">
 
         </div>
 
@@ -44,7 +46,8 @@
 
                 return {
 
-                    hello: "Hello World!",
+                    hello: " Hello World!",
+                    image: "https://c.tenor.com/IdyfGO5EewIAAAAC/tenor.gif",
 
                 }
 
